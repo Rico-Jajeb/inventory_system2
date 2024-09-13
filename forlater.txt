@@ -1,0 +1,2508 @@
+    
+    <!--INPUT OPTION  -->
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" name="user_name" id="exampleFormControlSelect1">
+        <option selected>none</option>
+        <option>INA</option>
+        <option>MO</option>
+        <option>HAHA</option>
+        <option>AK</option>
+        </select>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Include the jQuery library via the Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js" integrity="sha512-bztGAvCE/3+a1Oh0gUro7BHukf6v7zpzrAb3ReWAVrt+bVNNphcl2tDTKCBr5zk7iEDmQ2Bv401fX3jeVXGIcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.js" integrity="sha512-4WpSQe8XU6Djt8IPJMGD9Xx9KuYsVCEeitZfMhPi8xdYlVA5hzRitm0Nt1g2AZFS136s29Nq4E4NVvouVAVrBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--CPU Modal-->
+        <div class="popup_modal_container" id="modal1">
+          <div class="popupModal " id="modal2" >
+              <div class=" modal_form_cont  shadow">
+                  <!--begin-->
+
+                      <div class="modal_box2 ">
+                          <button class="modal_close_btn" type="submit"  onclick="close_pop_modal()" >
+                            <img class="close_icon" src="<?php echo base_url('assets/items_img/close.gif') ?>" alt="">
+                          </button>
+                      </div>
+                      <!-- <div class="save_notif" id="save_notif">
+
+                      </div> -->
+                      <div class="modal_title">
+                          <h5 class="itm_txt">ADD ITEM TO CPU</h5>
+                      </div>
+                      
+                      <div class="  ">
+                          <form  id="myform" class="ms-4 me-4  pb-3 ">
+                              <!--input category-->
+                              <div class="" style="display:none;">
+                                  <input type="text" value="CPU" name="category">
+                              </div>
+                              <!--END input category-->
+                            
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="name_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /tag.png" alt=""></label>
+                                  <input type="text" name="name_model" class="form-control name" placeholder="Name/Model" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="brand_error"><img class="general_icon " src="<?php echo base_url('assets/items_img') ?> /brand.png" alt=""></label>
+                                  <input type="text" name="brand" class="form-control brnd" placeholder="Brand" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="description_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /info.png" alt=""></label>
+                                  <input type="text" name="description"  class="form-control" placeholder="Description" required>
+                              </div>
+                              <div class="row">
+                                  <div class="d-flex justify-content-end mb-1 col item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" id="quantity_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /product.png" alt=""></label>
+                                    <input type="number" name="quantity" class="form-control" placeholder="quantity" required>
+                                  </div>
+                                  <div class="d-flex justify-content-end mb-1 col  item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" id="price_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /price.png" alt=""></label>
+                                    <input type="number" name="price" class="form-control" placeholder="$Price" required>
+                                  </div>
+                              </div> 
+                            
+                              <div class="d-flex justify-content-center mt-4">
+                                  <span>
+                                    <div class="button-borders">
+                                      <button type="submit"  class="primary-button itm_ajax_sbmit_bttn">save </button>
+                                    </div>
+                                  </span>
+                                  <span>
+                                    <button class="reset_btn" type="reset">
+                                      <img class="reset_icon" src="<?php echo base_url('assets/items_img') ?> /reset2.gif" alt="">
+                                    </button>
+                                  </span>
+                                  <span>
+                                    <div class="button-borders">
+                                      <button class="primary-button" id="primary-button">view</button>
+                                    </div>
+                                  </span>
+                              </div>
+
+                          </form>
+                      </div>
+                  <!--end--> 
+              </div>
+          </div>
+        </div>
+      <!-- end CPU modal-->
+
+
+
+
+
+
+
+
+
+        <div class="row mt-4">
+            <!--GroupChat-->
+            <div class="col-lg-8 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="bg-info me-4 ms-4 mt-4 text-center">
+                        <span><img class="group_chat_logo" src="<?php echo base_url('assets/items_img/keyboard.png') ?>" alt=""></span>
+                        <span>Staff Group Chat</span>
+                    </div>
+                    <div class="bg-warning me-4 ms-4 mt-3 mb-4 chat_message_cont">
+                        <div class="row">
+                            <div class="col-lg-1 col-sm-1 col-2 col-md-1 bg-danger d-flex justify-content-center">
+                                <img class="group_chat_logo mt-2" src="<?php echo base_url('assets/items_img/keyboard.png') ?>" alt="">
+                            </div>
+                            <div class="col-lg-9 col-sm-10 col-9 col-md-10 bg-info">
+                                <div><b class="">user</b></div>
+                                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum dicta voluptas velit tenetur explicabo hic sed earum. Aspernatur magni repudiandae in excepturi ipsam! Molestiae voluptates consequatur, accusantium ut doloremque sed!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END GroupChat-->
+            <div class="col-lg-4">
+                <div class="card h-100 p-3">
+
+                </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // This function inserts CPU data into a table.
+        public function insert_cpu_data()
+        {
+                // Get CPU data from form inputs using POST method
+                $name_model = $this->input->post('name_model');
+                $brand = $this->input->post('brand');
+                $description = $this->input->post('description');
+                $quantity = $this->input->post('quantity');
+                $price = $this->input->post('price');
+                $category = $this->input->post('category');
+
+                // Store CPU data in an array with name, brand, description, quantity, price, and category fields
+                $cpu_data = [
+                        'name_model' => $name_model,
+                        'brand' => $brand,
+                        'description' => $description,
+                        'itm_quantity' => $quantity,
+                        'itm_price' => $price,
+                        'itm_category' => $category,
+                ];
+
+                // Call the insert_cpu_db function from model to insert the CPU data into the database
+                $this->all_items_model->insert_cpu_db($cpu_data);
+
+                // Redirect to the item_controller
+                redirect('item_controller');
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    // public function uploadForm()
+    // {
+    //     $data['result'] = $this->login_model->getUploadfiles();
+    //     // $this->load->view('features/Dashboard/dashboard', $data);
+    //     $this->load->view('template/header');
+    //     $this->load->view('features/Dashboard/dashboard' ,$data);
+    //     $this->load->view('template/footer');
+    // }
+
+    // public function upload_img() //SIGN_UP-FORM
+    // {
+    //     if(isset($_FILES['files']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email'])){
+    //         $name = $_FILES['files']['name'];
+    //         $type = explode('.',$name);
+    //         $type = end($type);
+    //         $size = $_FILES['files']['size'];
+    //         $random_name = rand();
+    //         $tmp = $_FILES['files']['tmp_name'];
+    //         $destination = $random_name.'.'.$type;
+    //         move_uploaded_file($tmp, "image/user_img/".$destination);
+    
+    //         $username = $_POST['username'];
+    //         $password = $_POST['password'];
+    //         $email = $_POST['email'];
+    
+    //         $data = array(
+    //             "uploader_name" => $username,
+    //             "uploaded_file" => $destination,
+    //             "username" => $username,
+    //             "password" => $password,
+    //             "email" => $email
+    //         );
+    
+    //         $this->login_model->insertUpload($data);
+    
+    //         redirect($_SERVER['HTTP_REFERER']);
+    //     }
+    // }
+    
+
+
+
+
+
+
+
+
+
+    // public function upload_img() //SIGN_UP-FORM
+    // {
+    //     if(isset($_FILES['files'])){
+    //         $name = $_FILES['files']['name'];
+    //         $type = explode('.',$name);
+    //         $type = end($type);
+    //         $size = $_FILES['files']['size'];
+    //         $random_name = rand();
+    //         $tmp = $_FILES['files']['tmp_name'];
+    //         $destination = $random_name.'.'.$type;
+    //         move_uploaded_file($tmp, "image/".$destination);
+
+    //         if($this->session->userdata('connect') == true){
+    //             $sess = $this->session->userdata('user_name');
+    //         }
+    //         $data = array(
+    //             "uploader_name" => $sess,
+    //             "uploaded_file" => $destination
+    //         );
+    //         $this->login_model->insertUpload($data);
+    //         redirect($_SERVER['HTTP_REFERER']);
+    //     }
+    // }
+
+    
+    // public function user_signUp() //SIGN_UP-FORM
+    // {
+    //     $user_name  =   $this->input->post('user_name');
+    //     $email      =   $this->input->post('email');
+    //     $password   =   $this->input->post('password');
+
+    //     $sign_up_data = [
+    //         'user_name' => $user_name,
+    //         'email'     => $email,
+    //         'password'  => $password,
+    //     ];
+    //     $this->login_model->sign_up_db($sign_up_data);
+    //     $this->session->set_flashdata('status', 'Registered Successfully!');
+    //     redirect('System_controller');
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--SESSION -->
+<?php if ($this->session->userdata('connect') == true ){
+      $sess = $this->session->userdata('user_name');}
+      $image_path = base_url('image/user_img/' . $this->session->userdata('image'));
+      if(empty($sess)){
+        redirect('System_controller');
+      }
+?>
+<!--END SESSION -->
+
+<img class="user_image fixed-plugin-button-nav cursor-pointer" src="<?php echo $image_path ?>" alt="User Image">
+
+<div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+    <label class="me-3 mt-2 modal_label itm_pd" id="description_error"><img class="general_icon" src="<?php echo base_url('assets/items_img/user1.png') ?> " alt=""></label>
+    <input type="file" name="files" class="form-control" placeholder="image" required>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid py-4 ">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <span>
+              <form  method='post' action="<?= base_url() ?>index.php/admin_logs_data" >
+                  <input type='text' name='search' value='<?= $search ?>'>
+                  <input type='submit' name='submit' value='search'>
+              </form>
+              </span>
+              <h6>Admin Logs</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ADMIN ID</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ADMIN USERNAME</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date_Time IN</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date_Time OUT</th>
+                      <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php $sno = $row+1;  foreach ($result as $data): ?>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="<?php echo base_url('assets/assets/img/team-2.jpg') ?>" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"><?php echo $sno ?></h6>
+                            <!-- <p class="text-xs text-secondary mb-0"><?php echo $sno ?></p> -->
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0"><?php echo $data['admin_username'] ?></p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $data['date_time_in'] ?></span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $data['date_time_out'] ?></span>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+
+                    <?php $sno++;?>
+                    <?php endforeach; ?>
+    
+
+
+                  </tbody>
+                </table>
+              </div>
+              <?php echo $pagination ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="box2 ms-3 me-3  mb-3 ">
+    <!-- Search form (start) -->
+    <div class=" tableContainer ">
+            <form  method='post' action="<?= base_url() ?>index.php/audit_logs" >
+                    <input type='text' name='search' value='<?= $search ?>'>
+                    <input type='submit' name='submit' value='search'>
+            </form>
+            
+
+            <!-- Posts List -->
+            <table  class="table text-dark table-hover text-center"  '>
+            <thead class="border-bottom ">
+                    <tr>
+                            <th scope="col">S.no</th>
+                            <th scope="col">Product Id</th>
+                            <th scope="col">Name/Model</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">price</th>
+                            <th scope="col">Action</th>
+                    </tr>
+            </thead>
+    
+
+
+            <?php 
+                    $sno = $row+1;
+                    foreach($result as $data){
+
+                    echo "<tr>";
+                    echo "<td >".$sno."</td>";
+                    echo "<td>".$data['admin_id']."</td>";
+                    echo "<td>".$data['admin_username']."</td>";
+                    echo "<td>".$data['date_time_in']."</td>";
+                    echo "<td>".$data['date_time_out']."</td>";
+
+                    // use $data instead of $row
+          
+
+                    echo "</tr>";
+                    $sno++;
+                    }
+                    if(count($result) == 0){
+                    echo "<tr>";
+                    echo "<td colspan='7'>No record found.</td>";
+                    echo "</tr>";
+                    }
+            ?>
+
+
+
+            </table>
+
+            <!-- Paginate -->
+            <div class="bg-info">
+
+            <?= $pagination; ?>
+                  
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container-fluid py-4 ">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <span>
+                <?php echo form_open(base_url('display_logs'), array('method' => 'get')); ?>
+                <input type="text" name="search" value="<?php echo $this->input->get('search'); ?>">
+                <button type="submit">Search</button>
+                <?php echo form_close(); ?>
+              </span>
+              <h6>Admin Logs</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ADMIN ID</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ADMIN USERNAME</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date_Time IN</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date_Time OUT</th>
+                      <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php foreach ($results as $row): ?>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="<?php echo base_url('assets/assets/img/team-2.jpg') ?>" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm"><?php echo $row->admin_id; ?></h6>
+                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0"><?php echo $row->admin_username; ?></p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $row->date_time_in; ?></span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $row->date_time_out; ?></span>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <?php endforeach; ?>
+                  </tbody>
+                </table>
+              </div>
+              <?php echo $this->pagination->create_links(); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--CPU Modal-->
+      <div class="popup_modal_container" id="modal1">
+        <div class="popupModal d-flex align-items-center justify-content-center" id="modal2" >
+            <div class="">  
+              <!--Session-->
+              <div class="container-fluid pe-1 ps-1 itm_session">
+                <div class="itm_pop_session alert alert-success text-light text-center" role="alert">
+                    <strong class="h4  text-light fw-bold">Item <b id="itm_info" class="itm_txt">&nbsp;</b> Save Successfully!</strong> 
+                </div>
+              </div> 
+              <!--END Session-->
+              <div class=" modal_form_cont shadow align-self-center">
+                      <div class="modal_box2 ">
+                          <button class="modal_close_btn" type="submit"  onclick="close_pop_modal()" >
+                            <img class="close_icon" src="<?php echo base_url('assets/items_img/close.gif') ?>" alt="">
+                          </button>
+                      </div>
+                      <div class="modal_title">
+                          <h5 class="itm_txt">ADD ITEM TO CPU</h5>
+                      </div>
+                      <div class="  ">
+                          <form  id="myform" class="ms-4 me-4  pb-3 " enctype="multipart/form-data">
+                              <!--input category-->
+                              <div class="" style="display:none;">
+                                  <input type="text" value="CPU" name="category">
+                              </div>
+                              <!--END input category-->
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="name_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /tag.png" alt=""></label>
+                                  <input type="text" name="name_model" id="name_model" class="form-control name" placeholder="Name/Model" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="brand_error"><img class="general_icon " src="<?php echo base_url('assets/items_img') ?> /brand.png" alt=""></label>
+                                  <input type="text" name="brand" class="form-control brnd" placeholder="Brand" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="description_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /info.png" alt=""></label>
+                                  <input type="text" name="description"  class="form-control" placeholder="Description" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" id="description_error"><img class="general_icon" src="<?php echo base_url('assets/items_img/image.png') ?> " alt=""></label>
+                                  <input type="file" name="userfile" id="userfile"  class="form-control" placeholder="image" >
+                              </div>
+                              <div class="row">
+                                  <div class="d-flex justify-content-end mb-1 col item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" id="quantity_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /product.png" alt=""></label>
+                                    <input type="number" name="quantity" class="form-control" placeholder="quantity" required>
+                                  </div>
+                                  <div class="d-flex justify-content-end mb-1 col  item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" id="price_error"><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /price.png" alt=""></label>
+                                    <input type="number" name="price" class="form-control" placeholder="$Price" required>
+                                  </div>
+                              </div> 
+                            
+                              <div class="d-flex justify-content-center mt-4">
+                                  <span>
+                                    <div class="button-borders">
+                                      <button type="submit"  class="primary-button" id="itm_ajax_sbmit_bttn">save </button>
+                                    </div>
+                                  </span>
+                                  <span>
+                                    <button class="reset_btn" type="reset">
+                                      <img class="reset_icon" src="<?php echo base_url('assets/items_img') ?> /reset2.gif" alt="">
+                                    </button>
+                                  </span>
+                                  <span>
+                                    <div class="button-borders">
+                                      <a href="<?php echo base_url('index.php/cpu_table')?>" class="primary-button text-center pt-1" type="submit" id="primary-button" >view</a>
+                                    </div>
+                                  </span>
+                              </div>
+                          </form>
+                      </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <!-- end CPU modal-->
+
+
+
+
+<!--SESSION -->
+<?php if ($this->session->userdata('connect') == true ){
+      $sess = $this->session->userdata('user_name');
+      $admin_level = $this->session->userdata('admin_level');
+
+}?>
+<!--END SESSION -->
+
+
+
+
+          <?php if($admin_level == "admin") {?>
+
+
+            <?php }else{ ?>
+            <?php }?>
+
+
+
+
+
+
+
+            <!--CPU ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main"  >
+                        <div class="" data-bs-toggle="tooltip" data-bs-placement="left" title="click to view">
+                            <a class="hover-text"  href="<?php echo base_url('index.php/retrieve_cpu_data') ?>">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/cpu2.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1" >
+                            <h4 class="itm_txt">CPU</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2" style="display:none;">
+                          <button class="item_add_btn" onclick="pop_modal()">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+          <!--END CPU ITEM -->
+
+            <!--GPU ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main2"  >
+                        <div class="">
+                            <a class="hover-text"  href="<?php echo base_url('index.php/retrieve_gpu_data') ?>">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/gpu.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1a" >
+                            <h4 class="itm_txt">GPU</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2a" style="display:none;">
+                          <button class="item_add_btn" onclick="pop_modal2()">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END GPU ITEM -->
+            <!--MOBO ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main3"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/mobo2.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1b" >
+                            <h4 class="itm_txt">Motherboard</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2b" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END MOBO ITEM -->
+            <!--RAM ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main4"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/ram.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1c" >
+                            <h4 class="itm_txt">RAM</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2c" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END RAM ITEM -->
+
+            <!--STORAGE ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main5"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/storage3.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1d" >
+                            <h4 class="itm_txt">Storage</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2d" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END STORAGE ITEM -->
+
+            <!--KEYBOARD ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main6"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/keyboard.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1e" >
+                            <h4 class="itm_txt">Keyboard</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2e" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END KEYBOARD ITEM -->
+
+            <!--MONITOR ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main7"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/monitor.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1f" >
+                            <h4 class="itm_txt">Monitor</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2f" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END MONITOR ITEM -->
+
+            <!--MOUSE ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main8"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/mouse.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1g" >
+                            <h4 class="itm_txt">Mouse</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2g" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END MOUSE ITEM -->
+
+            <!--PSU ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main9"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/psu.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1h" >
+                            <h4 class="itm_txt">Power Supply</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2h" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--END PSU ITEM -->
+
+            <!--CPU COOLER Fan ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main10"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/cpuCooler.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1i" >
+                            <h4 class="itm_txt">CPU Cooler/Fan</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2i" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--CPU COOLER Fan ITEM -->
+
+            <!--CASE ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main11"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/case.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1j" >
+                            <h4 class="itm_txt">System Unit Case</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2j" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--CASE ITEM -->
+
+            <!--MOUSEPAD ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main12"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/mousepad.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1k" >
+                            <h4 class="itm_txt">Mousepad</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2k" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--MOUSEPAD ITEM -->
+
+            <!--HEADPHONE ITEM -->
+            <div class="col-xl-4 col-xxl-3 mb-5 ">
+                    <div class="m-auto bg-darks cards  mt-2 mb-2 shadow  " id="itm_main13"  >
+                        <div class="">
+                            <a class="hover-text"  href="">
+                                    <img class="itemImg ms-3" src="<?php echo base_url('assets/items_img/headphone.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="position-relative" style="height: 60px;overflow: hidden;margin-top: -70px;z-index:2;position: relative;">
+                            <div class="position-absolute w-100 top-0" style="z-index: 1;">
+                              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="itembtns3 add_hover1 " id="add_hover1l" >
+                            <h4 class="itm_txt">Headphone</h4>
+                        </div>
+                        <div class="itembtns3  " id="add_hover2l" style="display:none;">
+                          <button class="item_add_btn">
+                            <img class="plus_img " src="<?php echo base_url('assets/items_img') ?> /plus5.gif" alt="">
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            <!--HEADPHONE ITEM -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+foreach($result as $row) {
+  if(isset($row['category_name']) && isset($row['cpu'])) {
+?>
+    <h4 class="itm_txt"><?php echo $row['category_name'] ?></h4>
+<?php
+  }
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--CPU Modal-->
+
+    <div class="popup_modal_container modal3" >
+        <div class="pb-5 popupModal  d-flex justify-content-center  modal4"   >
+            <div class="mt-1  pb-4">  
+              <div class=" modal_form_defective_cont shadow align-self-center ">
+                      <div class="modal_box2 ">
+                          <button class="modal_close_btn" type="submit"  onclick="close_pop_modal2()" >
+                            <img class="close_icon" src="<?php echo base_url('assets/items_img/close.gif') ?>" alt="">
+                          </button>
+                      </div>
+                      <div class="modal_title">
+                          <h5 class="itm_txt">ADD ITEM TO <?= $category_name ?></h5>
+                      </div>
+                      <div class=" ps-4 pe-4 ">
+                          <form   action="<?php echo base_url('index.php/insert_item') ?>" method="POST"  class="  pb-3 " enctype="multipart/form-data">
+                              <!--input category-->
+                              <div class="" style="display:none;">
+                                  <input type="text" value="1" name="active">
+                              </div>
+                              <!--END input category-->
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /tag.png" alt=""></label>
+                                  <input type="text" name="name_model"  class="form-control name" placeholder="Name/Model" data-bs-toggle="tooltip" data-bs-placement="top" title="Name/Model" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /category5.png" alt=""></label>
+                                  <select name="category"  class="form-control" id="exampleFormControlSelect1" data-bs-toggle="tooltip" data-bs-placement="top" title="Category" required>
+                                    <option value="" selected disabled>----Select category----</option>
+                                    <?php foreach($data2['result'] as $row){  ?>
+                                      <option><?php echo $row['category_name'] ?></option>
+                                    <?php } ?> 
+                                  </select>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon " src="<?php echo base_url('assets/items_img') ?> /supplier.png" alt=""></label>
+                                  <input type="text" name="supplier" class="form-control brnd" placeholder="Supplier" data-bs-toggle="tooltip" data-bs-placement="top" title="Supplier" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /info.png" alt=""></label>
+                                  <input type="text" name="description"  class="form-control" placeholder="Description" data-bs-toggle="tooltip" data-bs-placement="top" title="Description" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd"><img class="general_icon" src="<?php echo base_url('assets/items_img/image.png') ?> " alt=""></label>
+                                  <input type="file" name="userfile"  class="form-control" placeholder="image"  data-bs-toggle="tooltip" data-bs-placement="top" title="Item Image">
+                              </div>
+                              <div class="row">
+                                  <div class="d-flex justify-content-end mb-1 col item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /product.png" alt=""></label>
+                                    <input type="number" name="quantity" class="form-control" placeholder="quantity" data-bs-toggle="tooltip" data-bs-placement="top" title="Quantity" required>
+                                  </div>
+                                  <div class="d-flex justify-content-end mb-1 col item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /brand.png" alt=""></label>
+                                    <input type="text" name="brand" class="form-control" placeholder="Brand" data-bs-toggle="tooltip" data-bs-placement="top" title="Brand" required>
+                                  </div>
+                              </div> 
+                              <div class="row">
+                                  <div class="d-flex justify-content-end mb-1 col  item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /price.png" alt=""></label>
+                                    <input type="number" name="price" class="form-control" placeholder="$Price" data-bs-toggle="tooltip" data-bs-placement="top" title="Price" required>
+                                  </div>
+                                  <div class="d-flex justify-content-end mb-1 col  item_mdal_inpt_container">
+                                    <label class="me-3 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /cost.png" alt=""></label>
+                                    <input type="number" name="cost" class="form-control" placeholder="Item Cost" data-bs-toggle="tooltip" data-bs-placement="top" title="Item Cost" required>
+                                  </div>
+                              </div> 
+                            
+                              <div class="d-flex justify-content-center mt-4">
+                                  <span>
+                                    <div class="button-borders">
+                                      <button type="submit"  class="primary-button" >save </button>
+                                    </div>
+                                  </span>
+                              </div>
+                          </form>
+                      </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <!-- end CPU modal-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+            <!-- This code is to select which data should be display in the table -->
+            <?php 
+            $dataPerPage = 5; // set number of data per page
+            $data = $data1['result'];
+            rsort($data); // sort the data array in reverse order (latest data first)
+            $category_name = isset($_GET['category_name']) ? $_GET['category_name'] : '';
+            $category_data = array_filter($data, function($row) use ($category_name) {
+                return $row['category_name'] == $category_name;
+            });
+            $totalData = count($category_data); // count the total number of data for the category
+            $totalPages = ceil($totalData / $dataPerPage); // calculate the total number of pages
+            $page = isset($_GET['page']) ? $_GET['page'] : 1; // get current page number
+            if($totalPages > 1 && $page > $totalPages) {
+                header("Location: ?category_name=$category_name&page=$totalPages");
+            }
+            $start = ($page - 1) * $dataPerPage; // calculate the starting point for fetching data
+            $data = array_slice($category_data, $start, $dataPerPage); // slice the data to get only the ones for the current page
+            $counter = $start; // initialize the counter variable
+
+            if (count($data) > 0) {
+                ?>
+
+    <?php foreach($data as $row) { ?>
+        <tr>
+
+        
+            <td><p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold "><?php echo ++$counter ?></p></td>
+            <td>
+              <span class=" ps-3 text-sm font-weight-bold"> 
+                <img class="itm_imgs"  src="<?php echo base_url('assets/image/all_item_img/' . $row['item_image']) ?>" alt="">
+              </span>
+            </td>    
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_name_model'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_brand'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['category_name'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_description'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['supplier'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_quantity'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_price'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['item_cost'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row['date_time'] ?></p> </td>
+            <td>
+
+                            <div class="form-check">
+                              <form class="myForm" action="<?php echo base_url('index.php/active_update_item') ?>" method="POST">
+                                <input type="hidden" name="active" value="0">
+                                <input type="hidden" name="defective_id" value="<?php echo $row['item_id'] ?>">
+                                <input class="form-check-input fcustomCheck1" type="checkbox" value="1" name="active" id="fcustomCheck1" <?php if($row['active'] == 1)echo "checked"?>>
+                                <label class="custom-control-label" for="customCheck1">Active</label>                              
+                              </form>
+                            </div>
+
+            </td>
+              
+
+        </tr>
+          <?php } ?>
+          <!-- end -->
+
+
+          <?php } else { ?>
+
+              <tr>
+                      <td class="text-center" colspan="12"><h2>No Data Available!!</h2> </td>
+              </tr>
+                  
+      <?php
+      }
+
+      // display pagination links
+      if ($totalPages > 1) {
+          ?>
+        </tbody>
+          </table>
+
+      <nav aria-label="...">
+        <ul class="pagination">
+          <?php
+          $url = "?category_name=$category_name&page=";
+          if ($page > 1) {
+            ?>
+            <li class="page-item">
+              <a class="page-link" href="<?php echo $url . ($page - 1) ?>" tabindex="-1">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <?php
+          } else {
+            ?>
+            <li class="page-item disabled">
+              <a class="page-link" href="javascript:;" tabindex="-1">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <?php
+          }
+
+          for ($i = 1; $i <= $totalPages; $i++) {
+            if ($i == $page) {
+              ?>
+              <li class="page-item active">
+                <a class="page-link" href="javascript:;"><?php echo $i ?><span class="sr-only">(current)</span></a>
+              </li>
+              <?php
+            } else {
+              ?>
+              <li class="page-item">
+                <a class="page-link" href="<?php echo $url . $i ?>"><?php echo $i ?></a>
+              </li>
+              <?php
+            }
+          }
+
+          if ($page < $totalPages) {
+            ?>
+            <li class="page-item">
+              <a class="page-link" href="<?php echo $url . ($page + 1) ?>">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+            <?php
+          } else {
+            ?>
+            <li class="page-item disabled">
+              <a class="page-link" href="javascript:;">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+            <?php
+          }
+          ?>
+        </ul>
+      </nav>
+      <?php }?>
+
+
+
+
+
+
+
+
+
+
+              <div class="dropdown me-4">
+                  <a href="#" class="dropdown-toggle h6" data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
+                   <?php echo $sess ?>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                      <li>
+                          <a class="dropdown-item itm_txt" href="#">
+                            <img src="" /> Profile
+                          </a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item itm_txt" href="<?php echo base_url('index.php/user_logout') ?>">
+                            <img src="" /> Logout
+                          </a>
+                      </li>
+                  </ul>
+                </div>
+
+
+
+
+
+
+
+
+                
+      <!-- <?php foreach($data1['result'] as $row) {?>
+            <?php if($row['customer_id'] == $sess2) {?>
+                <?php foreach($data2['result'] as $row2) {
+                  if($row2['item_id'] == $row['item_id']) { ?>
+                      <div class=""><b class="itm_txt"><?php echo $row2['item_id'] ?></b></div>
+                      <div class=""><b class="itm_txt"><?php echo $row2['category_name'] ?></b></div>
+                  <?php } ?>
+                 <?php } ?>
+            <?php } else { ?>  
+            <?php }?>
+      <?php } ?> -->
+
+
+
+
+
+
+
+
+
+
+                      <?php foreach($data2['result'] as $row2) {
+                  if($row2['item_id'] == $data1['result']['item_id']) { ?> 
+                  
+                  <?php echo $row2['item_id'] ?>
+                  <?php echo $row2['item_name_model'] ?>
+                  
+                  
+                  <?php }?>
+
+                <?php } ?>
+
+
+
+
+
+
+
+
+
+
+                                  <!-- <?php 
+                    $itemQuantity = '';
+                    foreach($data2['result'] as $row2) {
+                        if($row2['item_id'] == $data1['result']['item_id']) { 
+                            $itemQuantity = $row2['item_quantity'];
+                            break;
+                        }
+                    }?>                 -->
+                <!-- <input type="number" name="item_quantity" id="item_quantity" value="<?php echo $itemQuantity; ?>" class="form-control name" placeholder="Quantity" data-bs-toggle="tooltip" data-bs-placement="top" title="Quantity" required> -->
+                <!-- <input type="number" name="item_quantity" id="item_quantity" value="<?php echo $itemQuantity; ?>" class="form-control name" placeholder="Quantity" data-bs-toggle="tooltip" data-bs-placement="top" title="Quantity" required> -->
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="my-5  py-5">
+      <div class="container-fluid row mt-3 ">
+        <?php foreach($data1['result'] as $row) {?>
+              <?php if($row['customer_id'] == $sess2) {?>
+                <?php foreach($data2['result'] as $row2) {
+                  if($row2['item_id'] == $row['item_id']) { ?>
+                    <div class="col-10 card m-auto mb-3 row">
+                  
+                      <div class="p-2 d-flex gap-4 mt-4  ">
+                      <form action="<?php echo base_url('index.php/check_out') ?>" method="POST">
+		                    <input type="checkbox" id="item5" name="cart" value="<?php echo $row['cart_id'] ?>">
+
+
+                        <!-- <div class="form-check">
+                          <input class="form-check-input shadow" type="checkbox" value="" id="fcustomCheck1" >
+                          <?php echo $row['cart_id'] ?>
+                          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                        </div> -->
+                        
+                        <img class="item_img_cart" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="item image">
+                        <div class="d-flex gap-4 align-items-center">
+                          <span>Product: <b class="itm_txt"><?php echo $row2['item_name_model'] ?></b> </span>
+                          <span>Brand: <b class="itm_txt"><?php echo $row2['item_brand'] ?></b></span>
+                          <span>QTY: <b class="itm_txt"><?php echo $row['item_quantity'] ?></b></span>
+                          <span>Price: ₱ <b class="itm_txt"><?php echo $row['item_price'] ?></b></span>                                                
+                        </div>
+                      </div>
+                      <div class="row d-flex justify-content-end">
+                        <a href="<?php echo base_url('index.php/user_page_controller/check_out_item_page/' .$row['cart_id']) ?>" class="col-2 btn btn-success">Check out</a>
+                      </div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
+              <?php } else { ?>  
+              <?php }?>
+        <?php } ?>
+      </div>
+
+
+      
+      <div class="row">
+        <div class="col-10 card m-auto mb-3 row">
+          <!-- <a href="<?php echo base_url('index.php/user_page/user_page_controller/check_out_item_page/' .$row['cart_id']) ?>" class="col-2 btn btn-success" onclick="submitForm()">Check out</a> -->
+          <button type="submit">Submit</button>
+          <!-- <button type="submit" onclick="submitForm()">Submit</button> -->
+        </div>
+      </div>
+      </form>
+<!-- 
+      <div class="row">
+        <div class="col-10 card m-auto mb-3 row">
+          <a href="<?php echo base_url('index.php/user_page/user_page_controller/check_out_item_page/' .$row['cart_id']) ?>" class="col-2 btn btn-success">Check out</a>
+        </div>
+      </div> -->
+
+<script>
+		function submitForm() {
+			// Get all checkboxes
+			var checkboxes = document.querySelectorAll('input[type=checkbox]');
+			// Get checked items
+			var checkedItems = [];
+			for (var i = 0; i < checkboxes.length; i++) {
+				if (checkboxes[i].checked) {
+					checkedItems.push(checkboxes[i].value);
+				}
+			}
+			// Submit form with checked items
+			alert('Selected items: ' + checkedItems);
+			// Uncomment the following line to actually submit the form
+			// document.forms[0].submit();
+		}
+	</script>
+
+</section>
+<!-- END Section Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php $no2 = 1;  foreach ($data3['result'] as $row2): ?>
+        <tr>
+            <td><p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold "><?php echo $no2 ?></p></td>
+            <td>
+              <span class=" ps-3 text-sm font-weight-bold"> 
+                <img class="itm_imgs"  src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="">
+              </span>
+            </td>    
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_name_model'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_brand'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['category_name'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_description'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['supplier'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_quantity'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_price'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_cost'] ?></p> </td>
+            <td><p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['date_time'] ?></p> </td>
+            <!-- THIS IS FOR THE ACTIVE AND INACTIVE -->
+            <td>
+            <?php if($admin_level == "admin") {?>
+              <div class="form-check">
+                <form class="myForm" action="<?php echo base_url('index.php/active_update_item') ?>" method="POST">
+                  <input type="hidden" name="active" value="0">
+                  <input type="hidden" name="defective_id" value="<?php echo $row2['item_id'] ?>">
+                  <input class="form-check-input fcustomCheck1" type="checkbox" value="1" name="active" id="fcustomCheck1" <?php if($row2['active'] == 1)echo "checked"?>>
+                  <label class="custom-control-label" for="customCheck1">Active</label>                              
+                </form>
+              </div>
+              <?php }else{ ?>
+                <div class="form-check">
+          
+                  <input type="hidden" name="active" value="0">
+                  <input type="hidden" name="defective_id" value="<?php echo $row2['item_id'] ?>">
+                  <input class="form-check-input fcustomCheck1" type="checkbox" value="1" name="active" id="fcustomCheck1" <?php if($row2['active'] == 1)echo "checked"?>>
+                  <label class="custom-control-label" for="customCheck1">Active</label>                              
+      
+              </div>
+              <?php }?>
+            </td>
+            <!-- END OF ACTIVE AND INACTIVE -->
+
+            <!-- THIS IS FOR THE BEST SELLING ITEMS -->
+            <td>
+            <?php if($admin_level == "admin") {?>
+              <div class="form-check">
+                <form class="myForm" action="<?php echo base_url('index.php/best_selling_item') ?>" method="POST">
+                  <input type="hidden" name="active" value="0">
+                  <input type="hidden" name="defective_id" value="<?php echo $row2['item_id'] ?>">
+                  <input class="form-check-input fcustomCheck1" type="checkbox" value="1" name="active" id="fcustomCheck1" <?php if($row2['best_selling'] == 1)echo "checked"?>>
+                  <label class="custom-control-label" for="customCheck1">Best Selling</label>                              
+                </form>
+              </div>
+              <?php }else{ ?>
+                <div class="form-check">
+          
+                  <input type="hidden" name="active" value="0">
+                  <input type="hidden" name="defective_id" value="<?php echo $row2['item_id'] ?>">
+                  <input class="form-check-input fcustomCheck1" type="checkbox" value="1" name="active" id="fcustomCheck1" <?php if($row2['best_selling'] == 1)echo "checked"?>>
+                  <label class="custom-control-label" for="customCheck1">Best Selling</label>                              
+      
+              </div>
+              <?php }?>
+            </td>
+            <!--END OF THE BEST SELLING ITEMS -->
+
+            <?php if($admin_level == "admin") {?>
+              <td class="">
+                <div class="d-flex ">
+                  <span class="ms-3">
+                    <a href="<?php echo base_url('index.php/features/items_cont/update_item/update_item_controller/get_item_Details/' .$row2['item_id']) ?>"  data-bs-toggle="tooltip" data-bs-placement="top" title="Update">
+                      <div class="edit_container">
+                          <img class="edit_icon" src="<?php echo base_url('assets/items_img/edit.gif') ?>" alt="">
+                      </div>
+                    </a>
+                  </span>
+                </div>
+              </td>
+            <?php }else{ ?>
+            <?php }?>
+              
+
+        </tr>
+        <?php $no2++; ?>
+            <?php endforeach; ?>
+          <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+// Step 1: Determine the total number of items
+$totalItems = count($data3['result']);
+
+// Step 2: Calculate the total number of pages
+$itemsPerPage = 5;
+$totalPages = ceil($totalItems / $itemsPerPage);
+
+// Step 3: Determine the current page
+$currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+
+// Step 4: Calculate the starting index and ending index for the current page
+$startIndex = ($currentPage - 1) * $itemsPerPage;
+$endIndex = min($startIndex + $itemsPerPage - 1, $totalItems - 1);
+
+?>
+
+<!-- Your existing table code goes here -->
+
+        <?php
+        // Step 5: Iterate over the items within the specified range
+        $no2 = $startIndex + 1;
+        foreach (array_slice($data3['result'], $startIndex, $itemsPerPage) as $row2) {
+            ?>
+            <tr>
+                <td>
+                    <p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold"><?php echo $no2 ?></p>
+                </td>
+                <td>
+                    <span class="ps-3 text-sm font-weight-bold">
+                        <img class="itm_imgs" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="">
+                    </span>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_name_model'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_brand'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['category_name'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_description'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['supplier'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_quantity'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_price'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_cost'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['date_time'] ?></p>
+                </td>
+                <!-- THIS IS FOR THE ACTIVE AND INACTIVE -->
+            </tr>
+            <?php
+            $no2++;
+        }
+        ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<?php
+// Step 1: Determine the total number of items
+$totalItems = count($data3['result']);
+
+// Step 2: Calculate the total number of pages
+$itemsPerPage = 5;
+$totalPages = ceil($totalItems / $itemsPerPage);
+
+// Step 3: Determine the current page
+$currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+
+// Step 4: Calculate the starting index and ending index for the current page
+$startIndex = ($currentPage - 1) * $itemsPerPage;
+$endIndex = min($startIndex + $itemsPerPage - 1, $totalItems - 1);
+
+?>
+
+<!-- Your existing table code goes here -->
+
+        <?php
+        // Step 5: Iterate over the items within the specified range
+        $no2 = $startIndex + 1;
+        foreach (array_slice($data3['result'], $startIndex, $itemsPerPage) as $row2) {
+            ?>
+            <tr>
+                <td>
+                    <p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold"><?php echo $no2 ?></p>
+                </td>
+                <td>
+                    <span class="ps-3 text-sm font-weight-bold">
+                        <img class="itm_imgs" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="">
+                    </span>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_name_model'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_brand'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['category_name'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_description'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['supplier'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_quantity'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_price'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_cost'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['date_time'] ?></p>
+                </td>
+                <!-- THIS IS FOR THE ACTIVE AND INACTIVE -->
+            </tr>
+            <?php
+            $no2++;
+        }
+        ?>
+
+<!-- Pagination links -->
+<?php
+$pagination2 = '<ul class="pagination">';
+if ($currentPage > 1) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . ($currentPage - 1) . '">Previous</a></li>';
+}
+
+for ($page = 1; $page <= $totalPages; $page++) {
+    if ($page == $currentPage) {
+        $pagination2 .= '<li class="page-item active"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . $page . '">' . $page . '</a></li>';
+    } else {
+        $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . $page . '">' . $page . '</a></li>';
+    }
+}
+
+if ($currentPage < $totalPages) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . ($currentPage + 1) . '">Next</a></li>';
+}
+
+$pagination2 .= '</ul>';
+
+echo $pagination2;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <?php
+        $totalItems2 = count($data3['result']);
+        $itemsPerPage2 = 5;
+        $totalPages2 = ceil($totalItems2 / $itemsPerPage2);
+        $currentPage2 = isset($_GET['page']) ? $_GET['page'] : 1;
+        $startIndex2 = ($currentPage2 - 1) * $itemsPerPage2;
+        $endIndex2 = min($startIndex2 + $itemsPerPage2 - 1, $totalItems2 - 1);
+        $no2 = $startIndex2 + 1;
+        foreach (array_slice($data3['result'], $startIndex2, $itemsPerPage2) as $row2) {
+            ?>
+            <tr>
+                <td>
+                    <p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold"><?php echo $no2 ?></p>
+                </td>
+                <td>
+                    <span class="ps-3 text-sm font-weight-bold">
+                        <img class="itm_imgs" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="">
+                    </span>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_name_model'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_brand'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['category_name'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_description'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['supplier'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_quantity'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_price'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_cost'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['date_time'] ?></p>
+                </td>
+                <!-- THIS IS FOR THE ACTIVE AND INACTIVE -->
+            </tr>
+            <?php
+            $no2++;
+        }
+        ?>
+
+<!-- Pagination links -->
+<?php
+$pagination2 = '<ul class="pagination">';
+if ($currentPage2 > 1) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . ($currentPage2 - 1) . '">Previous</a></li>';
+}
+
+for ($page = 1; $page <= $totalPages2; $page++) {
+    if ($page == $currentPage2) {
+        $pagination2 .= '<li class="page-item active"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . $page . '">' . $page . '</a></li>';
+    } else {
+        $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . $page . '">' . $page . '</a></li>';
+    }
+}
+
+if ($currentPage2 < $totalPages2) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page=' . ($currentPage2 + 1) . '">Next</a></li>';
+}
+
+$pagination2 .= '</ul>';
+
+echo $pagination2;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php
+        $totalItems2 = count($data3['result']);
+        $itemsPerPage2 = 5;
+        $totalPages2 = ceil($totalItems2 / $itemsPerPage2);
+        $currentPage2 = isset($_GET['page2']) ? $_GET['page2'] : 1;
+        $startIndex2 = ($currentPage2 - 1) * $itemsPerPage2;
+        $endIndex2 = min($startIndex2 + $itemsPerPage2 - 1, $totalItems2 - 1);
+        $no2 = $startIndex2 + 1;
+        foreach (array_slice($data3['result'], $startIndex2, $itemsPerPage2) as $row2) {
+ 
+            ?>
+            <tr>
+                <td>
+                    <p class="mb-0 px-4 py-1 itm_txt text-sm font-weight-bold"><?php echo $no2 ?></p>
+                </td>
+                <td>
+                    <span class="ps-3 text-sm font-weight-bold">
+                        <img class="itm_imgs" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="">
+                    </span>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_name_model'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_brand'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['category_name'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_description'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['supplier'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['item_quantity'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_price'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0">₱ <?php echo $row2['item_cost'] ?></p>
+                </td>
+                <td>
+                    <p class="text-sm ps-4 font-weight-bold mb-0"><?php echo $row2['date_time'] ?></p>
+                </td>
+                <!-- THIS IS FOR THE ACTIVE AND INACTIVE -->
+            </tr>
+            <?php
+            $no2++;
+        }
+        ?>
+
+<!-- Pagination links -->
+<?php
+$pagination2 = '<ul class="pagination">';
+if ($currentPage2 > 1) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page2=' . ($currentPage2 - 1) . '">Previous</a></li>';
+}
+
+for ($page = 1; $page <= $totalPages2; $page++) {
+    if ($page == $currentPage2) {
+        $pagination2 .= '<li class="page-item active"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page2=' . $page . '">' . $page . '</a></li>';
+    } else {
+        $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page2=' . $page . '">' . $page . '</a></li>';
+    }
+}
+
+if ($currentPage2 < $totalPages2) {
+    $pagination2 .= '<li class="page-item"><a class="page-link" href="?category_name=' . urlencode($category_name) . '&page2=' . ($currentPage2 + 1) . '">Next</a></li>';
+}
+
+$pagination2 .= '</ul>';
+
+echo $pagination2;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="my-5  py-5">
+      <div class="container-fluid row mt-3 ">
+        <?php foreach($data1['result'] as $row) {?>
+              <?php if($row['customer_id'] == $sess2) {?>
+                <?php foreach($data2['result'] as $row2) {
+                  if($row2['item_id'] == $row['item_id']) { ?>
+                    <div class="col-10 card m-auto mb-3 row">
+                      <div class="  d-flex justify-content-end">
+                          <a class=" modal_close_btn  ms-5 delete-link" href="<?php echo base_url('index.php/user_page_controller/delete_cart_item/' .$row['cart_id']) ?>"  data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Product" >
+                            <img class="close_icon" src="<?php echo base_url('assets/items_img/close.gif') ?>" alt="">
+                          </a>                        
+                      </div>
+ 
+                      <div class="p-2 d-flex gap-4 mt-4  ">
+                      <form class="d-flex form-check" action="<?php echo base_url('index.php/checkout_items') ?>" method="POST">
+                        <input class="form-check-input fcustomCheck1 shadow" id="fcustomCheck1" type="checkbox" id="item<?php echo $row['cart_id'] ?>" name="cart[]" value="<?php echo $row['cart_id'] ?>">
+                        <img class="item_img_cart ms-3 me-3" src="<?php echo base_url('assets/image/all_item_img/' . $row2['item_image']) ?>" alt="item image">
+                        <div class="d-flex gap-4 align-items-center">
+                          <span>Product: <b class="itm_txt"><?php echo $row2['item_name_model'] ?></b> </span>
+                          <span>Brand: <b class="itm_txt"><?php echo $row2['item_brand'] ?></b></span>
+                          <span>Quantity: <b class="itm_txt"><?php echo $row['item_quantity'] ?></b></span>
+                          <span>Total Price: ₱ <b class="itm_txt"><?php echo $row['item_price'] ?></b></span>                                                
+                        </div>
+                      </div>
+                      <div class="row d-flex justify-content-end">
+
+                        <a href="<?php echo base_url('index.php/user_page_controller/get_cart_item_details/' .$row['cart_id'].'/'.$row['item_id']) ?>" class="col-2 btn btn-success">Edit</a> 
+                        <!-- <a href="<?php echo base_url('index.php/user_page_controller/delete_cart_item/' .$row['cart_id']) ?>" class="col-2 btn btn-danger">Delete</a>  -->
+                      
+                      </div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
+              <?php } else { ?>  
+              <?php }?>
+        <?php } ?>
+      </div>
+
+      <div class="popup_modal_container modal3" >
+        <div class="pb-5 popupModal  d-flex justify-content-center  modal4"   >
+            <div class="mt-1  pb-4">  
+              <div class=" modal_form_defective_cont2 shadow align-self-center ">
+                      <div class="modal_box2 me-5">
+                          <button class="modal_close_btn me-5 " type="submit"  onclick="close_pop_modal2()" >
+                            <img class="close_icon me-5" src="<?php echo base_url('assets/items_img/close.gif') ?>" alt="">
+                          </button>
+                      </div>
+                      <div class=" ps-4 pe-4 ">
+                         
+                              <!--input category-->
+           
+                              <!--END input category-->
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon" src="<?php echo base_url('assets/items_img') ?> /address.png" alt=""></label>
+                                  <input type="text" name="customer_address"  class="form-control name" placeholder="Address" data-bs-toggle="tooltip" data-bs-placement="top" title="Address" required>
+                              </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                                  <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon " src="<?php echo base_url('assets/items_img') ?> /call.png" alt=""></label> 
+                                  <!-- <input type="number" name="phone_number" max="11" class="form-control brnd" placeholder="Supplier" data-bs-toggle="tooltip" data-bs-placement="top" title="phone number"  required> -->
+                                  <input type="number" name="phone_number" maxlength="11" class="form-control brnd" placeholder="Phone Number" data-bs-toggle="tooltip" data-bs-placement="top" title="phone number" required>
+
+                                </div>
+                              <div class="d-flex justify-content-end mb-2 item_mdal_inpt_container">
+                              <label class="me-4 mt-2 modal_label itm_pd" ><img class="general_icon " src="<?php echo base_url('assets/items_img') ?> /payment.png" alt=""></label>
+                                <select name="payment_method" id="status" class="form-control" id="exampleFormControlSelect1" data-bs-toggle="tooltip" data-bs-placement="top" title="Payment Method" required>
+                                  <option selected disabled>---- Payment Method ----</option>
+                                  <option>COD (Cash on Delivery)</option>
+                                  <option>Card Payment</option></select>                                
+                              </div>
+
+                            
+                              <div class="d-flex justify-content-center gap-3 mt-4">
+                                  <span>
+                                    <div class="button-borders">
+                                      <button type="submit"  class="primary-button" >Submit </button>
+                                    </div>
+                                  </span>
+                                  <span>
+                                    <div class="button-borders">
+                                      <button onclick="close_pop_modal2()" class="primary-button" >Cancel </button>
+                                    </div>
+                                  </span>
+                              </div>
+      
+                      </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class=" m-auto row">
+        <div class="col-10 pt-2 card m-auto  row">
+            <button class="btn btn-primary" onclick="pop_modal2()">Check out selected items</button>
+        </div>
+      </div>
+      </form>
+
+
+</section>
+<!-- END Section Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid px-0 d-flex">
+              <a class="navbar-brand font-weight-bolder ms-sm-3  " href="" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+                <img src="<?php echo base_url('assets/image/system_logo/' . $data2['result']['system_logo']) ?>" class="system_logo" alt="main_logo">
+                <b class="ms-2"><?php echo $data2['result']['system_tittle'] ?></b> 
+              </a>
+              
+              <div class="  d-flex  align-items-center justify-content-center row">
+                <form method='post' action="<?= base_url('index.php/orders_table') ?>" >
+                <div class="container4">
+                    <input placeholder="Type to search..." required="" class="search_input5" name="text" type="text">
+                    <div class="search_icon8">
+                        <svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
+                            <title>Search</title>
+                            <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                            <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
+                        </svg>
+                    </div>
+                </div>
+                </form>
+              </div>
+            
+              <button class="navbar-toggler shadow-none ms-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mt-2">
+                  <span class="navbar-toggler-bar bar1"></span>
+                  <span class="navbar-toggler-bar bar2"></span>
+                  <span class="navbar-toggler-bar bar3"></span>
+                </span>
+              </button> 
+
+            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100 " id="navigation">
+                <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100">
+                  <li class="nav-item dropdown dropdown-hover mx-2">
+                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" href="javascript:;" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                      <!-- <img src="<?php echo base_url('assets/assets/img/down-arrow-dark.svg')?>" alt="down-arrow " class="arrow ms-1"> -->
+                      <img src="<?php echo base_url('assets/assets/img/down-arrow-dark.svg') ?>" alt="down-arrow " class="arrow ms-1">
+                    </a>
+
+  
+
+                </li>
+                </ul>
+            </div>
+
+      </div>
